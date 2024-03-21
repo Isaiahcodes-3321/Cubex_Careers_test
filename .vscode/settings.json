@@ -1,0 +1,5 @@
+{
+    "files.exclude": {
+        "**/monietracka_test.iml": true
+    }
+}
