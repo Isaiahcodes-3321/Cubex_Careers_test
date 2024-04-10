@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:moneytracka_test/screen/app_ui/login_view.dart';
+import 'package:moneytracka_test/screen/app_ui/register.dart';
 
 //code entry point
 void main() => runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         return const ProviderScope(
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            home:  LoginView(),
+            home: Register(),
           ),
         );
       },

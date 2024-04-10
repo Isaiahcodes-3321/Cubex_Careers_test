@@ -12,6 +12,7 @@ class TextInput extends StatelessWidget {
   final VoidCallback? onPressed;
   final void Function(String)? onChange;
   final TextInputType keyboardType;
+  final int maxLineNumber;
   const TextInput(
       {Key? key,
       required this.isVisible,
@@ -20,7 +21,7 @@ class TextInput extends StatelessWidget {
       required this.hintText,
       this.onPressed,
       required this.keyboardType,
-      this.onChange})
+      this.onChange, required this.maxLineNumber})
       : super(key: key);
 
   @override
@@ -29,6 +30,7 @@ class TextInput extends StatelessWidget {
       controller: textInput,
       obscureText: isVisible,
       keyboardType: keyboardType,
+      maxLines: maxLineNumber,
       style: AppTextStyle.bold()
           .copyWith(color: AppColors.blackColor, fontSize: 16.sp),
       decoration: InputDecoration(
