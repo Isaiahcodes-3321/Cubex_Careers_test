@@ -30,7 +30,7 @@ class _LogoAnimationState extends State<LogoAnimation>
 
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Timer(const Duration(seconds: 10), () {
+        Timer(const Duration(seconds: 7), () {
           _controller.reset();
           _controller.forward();
         });
